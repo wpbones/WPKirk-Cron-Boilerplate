@@ -22,35 +22,11 @@ return [
     'icon' => 'wpbones-logo-menu.png',
     'items' => [
       [
-        "page_title" => "DB",
-        "menu_title" => "DB",
+        "page_title" => "Cron Example",
+        "menu_title" => "Cron Example",
         'capability' => 'read',
         'route' => [
-          'get' => 'Examples\DatabaseController@db'
-        ],
-      ],
-      [
-        "page_title" => "Model",
-        "menu_title" => "Model",
-        'capability' => 'read',
-        'route' => [
-          'get' => 'Examples\DatabaseController@simpleModel'
-        ],
-      ],
-      [
-        "page_title" => "Model NoPrefix",
-        "menu_title" => "Model NoPrefix",
-        'capability' => 'read',
-        'route' => [
-          'get' => 'Examples\DatabaseController@noPrefixModel'
-        ],
-      ],
-      [
-        "page_title" => "Eloquent ORM",
-        "menu_title" => "Eloquent ORM",
-        'capability' => 'read',
-        'route' => [
-          'get' => 'Examples\DatabaseController@eloquent'
+          'get' => 'Examples\CronController@index'
         ],
       ],
     ]

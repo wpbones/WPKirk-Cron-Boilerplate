@@ -8,12 +8,12 @@ WP Kirk Database Boilerplate is your starting point to create a WordPress plugin
 
 ## Requirements
 
-- PHP 8.2 or higher - due to illuminate/database package requirements.
+- PHP 7.4 or higher
 
 ## Installation
 
 ```bash
-git clone -b main https://github.com/wpbones/WPKirk-Boilerplate.git <your plugin folder>
+git clone -b main https://github.com/wpbones/WPKirk-Cron-Boilerplate.git <your plugin folder>
 cd <your plugin folder>
 composer install
 ```
