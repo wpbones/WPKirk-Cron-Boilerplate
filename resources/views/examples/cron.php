@@ -34,7 +34,10 @@ ob_start()
       <?php wpkirk_md(__('In the `plugins/Provider` directory, the new provider will be created by default. Of course, you may create your schedule service provider manually and in any directory you prefer. You have to change the namespace accordingly.', 'wp-kirk')); ?>
     </p>
 
-    <?php wpkirk_code('php bones make:schedule ScheduleExampleProvider', false, 'sh'); ?>
+    <?php wpkirk_code(
+      'php bones make:schedule ScheduleExampleProvider',
+      ['language' => 'sh']
+    ); ?>
 
     <?php wpkirk_code("@/plugin/Providers/ScheduleExampleProvider.php"); ?>
 
