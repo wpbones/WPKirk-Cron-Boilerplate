@@ -1,68 +1,123 @@
+# Copyright (C) 2024 Giovambattista Fazioli
+# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Kirk\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-21 16:56+0100\n"
-"PO-Revision-Date: 2016-11-21 16:56+0100\n"
+"Project-Id-Version: WP Kirk Cron Boilerplate 1.8.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-kirk\n"
+"POT-Creation-Date: 2024-11-12T12:13:49+00:00\n"
+"PO-Revision-Date: 2024-11-12 13:18+0100\n"
 "Last-Translator: \n"
-"Language-Team: Giovambattista Fazioli <giovambattista.fazioli@gmail.com>\n"
-"Language: it_IT\n"
+"Language-Team: \n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_nx:1,2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.11\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: node_modules\n"
-"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: wp-kirk\n"
 
-#~ msgid "You can localize me"
-#~ msgstr "Mi puoi localizzare"
+#. Plugin Name of the plugin
+#: wp-kirk.php
+msgid "WP Kirk Cron Boilerplate"
+msgstr "WP Kirk Cron Boilerplate"
 
-#~ msgid "Description"
-#~ msgstr "Descrizione"
+#. Plugin URI of the plugin
+#: wp-kirk.php
+msgid "https://github.com/wpbones/WPKirk-Boilerplate"
+msgstr "https://github.com/wpbones/WPKirk-Boilerplate"
 
-#~ msgid "Placeholders"
-#~ msgstr "Segnaposti"
+#. Description of the plugin
+#: wp-kirk.php
+msgid "WP Bones Boilerplate WordPress plugin"
+msgstr "WP Bones Boilerplate Plugin WordPress"
 
-#~ msgid "Environment"
-#~ msgstr "Ambienti"
+#. Author of the plugin
+#: wp-kirk.php
+msgid "Giovambattista Fazioli"
+msgstr "Giovambattista Fazioli"
 
-#~ msgid "Places"
-#~ msgstr "Posti"
+#. Author URI of the plugin
+#: wp-kirk.php
+msgid "https://wpbones.com/"
+msgstr "https://wpbones.com/"
 
-#~ msgid "Status"
-#~ msgstr "Stato"
+#: resources/views/examples/cron.php:21
+msgid "Overview"
+msgstr "Panoramica"
 
-#~ msgid "Name"
-#~ msgstr "Nome"
+#: resources/views/examples/cron.php:24
+msgid ""
+"The cron schedule provider is a simple way to manage cron jobs in WordPress. "
+"It allows you to schedule a function to run at a specific time or interval."
+msgstr ""
+"Il provider di pianificazione cron è un modo semplice per gestire i cron job "
+"in WordPress. Consente di pianificare l'esecuzione di una funzione a un'ora "
+"o a un intervallo specifico."
 
-#~ msgid "Publish"
-#~ msgstr "Pubblica"
+#: resources/views/examples/cron.php:27
+msgid "Create a Schedule Service Provider"
+msgstr "Creazione di un provider di servizi di pianificazione"
 
-#~ msgid "Trash"
-#~ msgstr "Cestino"
+#: resources/views/examples/cron.php:30
+msgid ""
+"You may create your own schedule service provider by following the steps "
+"below:"
+msgstr ""
+"È possibile creare il proprio fornitore di servizi di pianificazione "
+"seguendo i passaggi seguenti:"
 
-#~ msgid "Edit"
-#~ msgstr "Modifica"
+#: resources/views/examples/cron.php:34
+msgid ""
+"In the `plugins/Provider` directory, the new provider will be created by "
+"default. Of course, you may create your schedule service provider manually "
+"and in any directory you prefer. You have to change the namespace "
+"accordingly."
+msgstr ""
+"Nella directory `plugins/Provider`, il nuovo provider verrà creato per "
+"impostazione predefinita. Naturalmente, puoi creare il tuo Service Provider "
+"di pianificazione manualmente e in qualsiasi directory tu preferisca. È "
+"necessario modificare lo spazio dei nomi di conseguenza."
 
-#~ msgid "Restore"
-#~ msgstr "Repristina"
+#: resources/views/examples/cron.php:45
+msgid ""
+"The `run` method is the method that will be executed when the schedule event "
+"is triggered. You should define a unique hook name and recurrence for your "
+"schedule event. You may use the protected properties `$hook` and "
+"`$recurrence` to set the hook name and recurrence. Of course, you may "
+"override the `boot` method to set these properties.    For example, you may "
+"set the recurrence from the database or from a configuration file."
+msgstr ""
+"Il metodo `run` è il metodo che verrà eseguito quando viene attivato "
+"l'evento di pianificazione. È necessario definire un nome di hook univoco e "
+"una ricorrenza per l'evento pianificato. È possibile utilizzare le proprietà "
+"protette `$hook` e `$recurrence` per impostare il nome dell'hook e la "
+"ricorrenza. Naturalmente, è possibile sovrascrivere il metodo 'boot' per "
+"impostare queste proprietà. Ad esempio, è possibile impostare la ricorrenza "
+"dal database o da un file di configurazione."
 
-#~ msgid "Delete"
-#~ msgstr "Elimina"
+#: resources/views/examples/cron.php:48
+msgid "Load the Schedule Service Provider"
+msgstr "Caricare il provider di servizi di pianificazione"
 
-#~ msgid "Icon"
-#~ msgstr "Icona"
+#: resources/views/examples/cron.php:51
+msgid ""
+"Add this new Service Provider to the list of providers in the `/config/"
+"plugin.php` file:\n"
+msgstr ""
+"Aggiungere questo nuovo Service Provider all'elenco dei fornitori nel file `/"
+"config/plugin.php`:\n"
 
-#~ msgid "Move to Trash"
-#~ msgstr "Sposta nel cestino"
+#: resources/views/examples/cron.php:68
+msgid "Clear the schedule event"
+msgstr "Cancellare l'evento programmato"
 
-#~ msgid "Add"
-#~ msgstr "Aggiungi"
-
-#~ msgid "Update"
-#~ msgstr "Aggiorna"
+#: resources/views/examples/cron.php:71
+msgid ""
+"You don't need to clear the schedule event when you deactivate the plugin. "
+"WP Bones will do it for you.\n"
+"  Anyway, you may use the `clear` method to do any cleanup when the plugin "
+"is deactivated."
+msgstr ""
+"Non è necessario cancellare l'evento di pianificazione quando si disattiva "
+"il plug-in. WP Bones lo farà per te.\n"
+"  Ad ogni modo, è possibile utilizzare il metodo `clear` per eseguire "
+"qualsiasi pulizia quando il plugin è disattivato."
