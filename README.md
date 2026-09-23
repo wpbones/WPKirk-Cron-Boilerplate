@@ -8,7 +8,7 @@ WP Kirk Database Boilerplate is your starting point to create a WordPress plugin
 
 ## Requirements
 
-- PHP 7.4 or higher
+- PHP 8.1 or higher
 
 ## Installation
 
